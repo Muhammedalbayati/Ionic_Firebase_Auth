@@ -1,0 +1,45 @@
+<ion-side-menus enable-menu-with-back-views="false" ng-app="app">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+        <ion-header-bar class="bar-stable">
+
+            <!--
+            <div class="buttons" side="left">
+    <button class="button" ng-show="currentUser" ng-click="vm.logout()">Log out</button>
+</div>
+-->
+
+            <h1 class="title">My App</h1>
+        </ion-header-bar>
+        <ion-content>
+            <div class="list">
+                <ion-item menu-close ui-sref="app.search">
+                    Search
+                </ion-item>
+                <ion-item menu-close ui-sref="app.browse">
+                    Browse
+                </ion-item>
+                <div ng-show="currentUser">
+                    <a class="item item-icon-left" menu-close ui-sref="app.settings">
+                        <i class="icon ion-settings small"></i> Settings
+                    </a>
+                    <a class="item item-icon-left" menu-close ng-click="vm.logout()">
+                        <i class="icon ion-power"></i> Logout
+                    </a>
+                </div>
+            </div>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

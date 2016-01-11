@@ -1,0 +1,10 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/IonicDev/FbAuth1/platforms/android/assets/www/lib/angular-sanitize/angular-sanitize.min.js",
+        "C:/IonicDev/FbAuth1/platforms/android/assets/www/js/app.js",
+        "C:/IonicDev/FbAuth1/platforms/android/assets/www/js/authService.js",
+        "C:/IonicDev/FbAuth1/platforms/android/assets/www/js/controllers.js",
+        "C:/IonicDev/FbAuth1/www/js/userService.js",
+        "C:/IonicDev/FbAuth1/platforms/android/assets/www/lib/angular-animate/angular-animate.js"
+    ]
+}

@@ -1,0 +1,23 @@
+<ion-view ng-controller="changeEmailCtrl as vm" view-title="Change Email">
+    <ion-content>
+        <form ng-submit="vm.changeEmail(user)">
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">old Email</span>
+                    <input type="text" ng-model="user.oldEmail">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">new Email</span>
+                    <input type="text" ng-model="user.newEmail">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="user.password">
+                </label>
+                <label class="item">
+                    <button class="button button-block button-positive" type="submit">Submit</button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>
